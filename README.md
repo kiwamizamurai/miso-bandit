@@ -1,7 +1,3 @@
-# Multi-Armed Bandit Simulation Web App
-
-An interactive web application for exploring Multi-Armed Bandit algorithms, built with Haskell's Miso framework and compilable to WASM. Based on concepts from "Probability & Statistics with Applications to Computing" by Alex Tsun.
-
 ## What is the Multi-Armed Bandit Problem?
 
 Imagine you're in a casino with K slot machines (one-armed bandits), each with an unknown probability of reward. You have T total pulls to maximize your reward. The fundamental challenge: **how do you decide which arm to pull at each time step?**
