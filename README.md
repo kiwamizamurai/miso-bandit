@@ -13,11 +13,9 @@ Imagine you're in a casino with K slot machines (one-armed bandits), each with a
 
 | Domain | Exploitation | Exploration |
 |--------|-------------|-------------|
-| **Restaurant Selection** | Go to your favorite restaurant | Try a new restaurant |
 | **Online Advertising** | Show the most successful ad | Test a new advertisement design |
 | **Oil Drilling** | Drill at the best known location | Drill at a new location |
 | **Game Playing** | Play the move you believe is best | Play an experimental move |
-| **Clinical Trials** | Assign patients to best treatment | Test new treatments |
 | **Recommendation Systems** | Recommend similar to past clicks | Recommend diverse content |
 | **Financial Investment** | Invest in proven strategies | Try new investment approaches |
 | **A/B Testing** | Use the winning variant | Test new features |
@@ -106,12 +104,6 @@ Bayesian approach using posterior sampling from Beta distributions:
 
 ## Quick Start
 
-### Development Server with JSaddle
-
-```bash
-make dev
-```
-
 Access the application at http://localhost:8080
 
 ### WASM Build (requires wasm32-wasi-ghc)
@@ -146,19 +138,6 @@ make serve  # Serve the built WASM locally
   - ε-greedy: ε = 0.15
   - UCB: c = 2.0
 - **Update frequency**: Real-time visualization
-
-## Development Commands
-
-```bash
-make help         # Show all available commands
-make dev          # Start development server (port 8080)
-make build        # Build WASM for production
-make serve        # Serve WASM build locally
-make clean        # Clean build artifacts
-make lint         # Run hlint code linter
-make format       # Auto-format with ormolu
-make format-check # Check code formatting
-```
 
 ## References
 
