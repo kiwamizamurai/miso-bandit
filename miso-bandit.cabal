@@ -1,0 +1,63 @@
+cabal-version:      2.4
+name:               miso-bandit
+version:            0.1.0.0
+synopsis:           Multi-Armed Bandit Algorithm Simulation with Miso
+description:        Interactive web application for multi-armed bandit algorithms using Miso framework
+license:            MIT
+author:             kiwamizamurai
+maintainer:         24860100+kiwamizamurai@users.noreply.github.com
+category:           Simulation, Machine Learning, Web
+build-type:         Simple
+extra-source-files: README.md
+
+executable miso-bandit
+  main-is:             Main.hs
+  other-modules:       Bandit
+                     , Bandit.Model
+                     , Bandit.Actions
+                     , Bandit.Update
+                     , Bandit.View
+                     , Bandit.View.Charts
+                     , Bandit.View.Charts.Common
+                     , Bandit.View.Charts.Rewards
+                     , Bandit.View.Charts.Regret
+                     , Bandit.View.Charts.Arms
+                     , Bandit.View.Controls
+                     , Bandit.View.Arms
+                     , Bandit.View.Statistics
+                     , Bandit.Metrics
+                     , Bandit.Algorithm.Types
+                     , Bandit.Algorithm.EpsilonGreedy
+                     , Bandit.Algorithm.UCB
+                     , Bandit.Algorithm.ThompsonSampling
+  build-depends:       base >=4.12 && <5
+                     , miso
+                     , random
+                     , vector
+                     , text
+                     , containers
+  
+  -- JSaddle dependencies for development server
+  if !arch(wasm32) && !impl(ghcjs)
+    build-depends:     jsaddle
+                     , jsaddle-warp
+                     , wai-app-static
+  
+  hs-source-dirs:      src
+  default-language:    Haskell2010
+  ghc-options:         -Wall
+  
+  if impl(ghcjs)
+    ghc-options:       -dedupe
+    cpp-options:       -DGHCJS_BROWSER
+  
+  if arch(wasm32)
+    ghc-options:       -no-hs-main -optl-mexec-model=reactor -optl-Wl,--export=hs_start
+    cpp-options:       -DWASM
+  
+  default-extensions:  OverloadedStrings
+                     , RecordWildCards
+                     , DeriveGeneric
+                     , DataKinds
+                     , TypeOperators
+                     , LambdaCase
