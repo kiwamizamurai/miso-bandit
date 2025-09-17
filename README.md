@@ -14,7 +14,6 @@ Imagine you're in a casino with K slot machines (one-armed bandits), each with a
 | Domain | Exploitation | Exploration |
 |--------|-------------|-------------|
 | **Online Advertising** | Show the most successful ad | Test a new advertisement design |
-| **Oil Drilling** | Drill at the best known location | Drill at a new location |
 | **Game Playing** | Play the move you believe is best | Play an experimental move |
 | **Recommendation Systems** | Recommend similar to past clicks | Recommend diverse content |
 | **Financial Investment** | Invest in proven strategies | Try new investment approaches |
