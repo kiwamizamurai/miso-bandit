@@ -139,12 +139,10 @@ make serve  # Serve the built WASM locally
 - **Update frequency**: Real-time visualization
 
 ## References
-
-### Academic Materials
-1. **Cambridge University - Randomised Algorithms** ([PDF](https://www.cl.cam.ac.uk/teaching/2122/RandAlgthm/lec15_bandits_handout.pdf))
-2. **Stanford University - Multi-Armed Bandits** ([PDF](https://web.stanford.edu/class/cme241/lecture_slides/MultiArmedBandits.pdf))
-3. **Cornell University - Learning, Games, and Electronic Markets** ([PDF](https://www.cs.cornell.edu/courses/cs683/2007sp/lecnotes/week8.pdf))
-4. **Oxford University - Algorithmic Foundations of Learning** ([PDF](https://www.stats.ox.ac.uk/~rebeschi/teaching/AFoL/22/material/lecture15.pdf))
+1. Cambridge University - Randomised Algorithms ([PDF](https://www.cl.cam.ac.uk/teaching/2122/RandAlgthm/lec15_bandits_handout.pdf))
+2. Stanford University - Multi-Armed Bandits ([PDF](https://web.stanford.edu/class/cme241/lecture_slides/MultiArmedBandits.pdf))
+3. Cornell University - Learning, Games, and Electronic Markets ([PDF](https://www.cs.cornell.edu/courses/cs683/2007sp/lecnotes/week8.pdf))
+4. Oxford University - Algorithmic Foundations of Learning ([PDF](https://www.stats.ox.ac.uk/~rebeschi/teaching/AFoL/22/material/lecture15.pdf))
 5. [My gist part 1](https://gist.github.com/kiwamizamurai/65b482e5fff06aaf3499a8274911ed07)
 6. [My gist part 2](https://gist.github.com/kiwamizamurai/ad94f49d9a85969f0ecaa8cc2bf1925c)
 7. [My gist part 3](https://gist.github.com/kiwamizamurai/755bb64881f074e1b32b74df7f071615)
